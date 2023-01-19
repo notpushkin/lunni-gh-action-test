@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lunni-example-python"
+version = "0.1.0"
+description = "Example application for Lunni."
+authors = ["Alexander Pushkov <ale@aedge.dev>"]
+license = "Unlicense"
+readme = "README.md"
+packages = [{include = "lunni_example_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.89.1"
+uvicorn = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
