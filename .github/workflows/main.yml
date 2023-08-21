@@ -1,0 +1,20 @@
+name: Push into main branch
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build
+        id: build
+        uses: lunnihq/github-action@main
+        with: {}
+
+    outputs:
+      image: ${{ steps.build.outputs.image }}
+      tag: ${{ steps.build.outputs.tag }}
