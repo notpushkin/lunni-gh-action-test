@@ -1,7 +1,7 @@
 name: Push into main branch
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 jobs:
   context:
