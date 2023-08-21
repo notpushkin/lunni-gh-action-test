@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "lunni-example-python"
+name = "lunni-example-python-x"
 version = "0.1.0"
 description = "Example application for Lunni."
 authors = ["Alexander Pushkov <ale@aedge.dev>"]
