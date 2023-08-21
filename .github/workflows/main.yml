@@ -13,7 +13,8 @@ jobs:
       - name: Build
         id: build
         uses: lunnihq/github-action@main
-        with: {}
+        with:
+          password: ${{ secrets.GITHUB_TOKEN }}
 
     outputs:
       image: ${{ steps.build.outputs.image }}
